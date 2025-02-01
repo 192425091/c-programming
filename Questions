@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,sum;
+    float e;
+    printf("cost of rice bag=",a);
+    scanf("%d",&a);
+    printf("cost of sugar bag=",b);
+    scanf("%d",&b);
+    printf("cost of oil=",c);
+    scanf("%d",&c);
+    d=a+b+c;
+    printf("total cost of grocerys=%d\n",d);
+    e=d*5/100;
+    printf("total cost with tax=%.2f",e);
+    sum=d+e;
+    printf("total cost of grocerys are=%d",sum);
+    return 0;
+}
