@@ -1,0 +1,111 @@
+RECURSION FACTORIAL
+
+#include<stdio.h>
+long int multiplynumbers (int n);
+int main()
+{
+    int n;
+    printf("enter a positive integer : ");
+    scanf("%d",&n);
+    printf("factorial of %d =%d",n, multiplynumbers (n));
+    return 0;
+}
+long int multiplynumber (int n)
+{
+    if (n>=1)
+    return 
+    n*multiplynumber(n-1);
+    else 
+    return 1;
+}
+
+RECURSION FIBONACCI SERIES 
+
+#include<stdio.h>
+int fibonacci(int n)
+{
+ if(n<=0)
+ {
+  return 0;  
+ }
+ else
+ if(n==1)
+ {
+     return 1;
+ }
+ else
+ {
+     return fibonacci(n-1)+fibonacci(n-2);
+ }
+}
+int main()
+{
+    int n=10,i;
+    printf("fibonacci series :");
+    for(i=0;i<n;i++)
+    {
+        printf("%d",fibonacci(i));
+    }
+    return 0;
+}
+
+
+program to find years  ,months ,weeks ,days
+
+#include<stdio.h>
+int main()
+{
+    int days,weeks,months,years;
+    printf("enter the number of days :");
+    scanf("%d",&days);
+    years=days/365;
+    days%=365;
+    months=days/30;
+    days%=30;
+    weeks=days/7;
+    days%=7;
+    printf("year :%d\n",years);
+    printf("months : %d\n",months);
+    printf("weeks : %d\n",weeks);
+    printf("days  : %d\n",days);
+    return 0;
+}
+
+
+call by value
+
+#include<stdio.h>
+void swapx(int x,int y)
+{
+    int t;
+    t=x;
+    x=y;
+    y=t;
+    printf("inside swapx : x=%d y=%d\n",x,y);
+}
+int main()
+{
+    int a=10,b=20;
+    swapx(a,b);
+    printf("inside main : a=%d, b=%d",a,b);
+    return 0;
+}
+
+call by reference
+
+#include<stdio.h>
+void swapx(int*x,int*y)
+{
+    int t;
+    t=*x;
+    *x=*y;
+    *y=t;
+    printf("inside swap : x=%d y=%d\n",*x,*y);
+}
+int main()
+{
+    int a=10,b=20;
+    swapx(&a,&b);
+    printf("inside main : a=%d b=%d",a,b);
+    return 0;
+}
