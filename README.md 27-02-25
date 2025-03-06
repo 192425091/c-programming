@@ -1,4 +1,4 @@
-RECURSION FACTORIAL
+#RECURSION FACTORIAL
 
 #include<stdio.h>
 long int multiplynumbers (int n);
@@ -19,7 +19,7 @@ long int multiplynumber (int n)
     return 1;
 }
 
-RECURSION FIBONACCI SERIES 
+#RECURSION FIBONACCI SERIES 
 
 #include<stdio.h>
 int fibonacci(int n)
@@ -50,7 +50,7 @@ int main()
 }
 
 
-program to find years  ,months ,weeks ,days
+#program to find years  ,months ,weeks ,days
 
 #include<stdio.h>
 int main()
@@ -72,7 +72,7 @@ int main()
 }
 
 
-call by value
+#call by value
 
 #include<stdio.h>
 void swapx(int x,int y)
@@ -91,7 +91,7 @@ int main()
     return 0;
 }
 
-call by reference
+#call by reference
 
 #include<stdio.h>
 void swapx(int*x,int*y)
